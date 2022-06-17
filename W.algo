@@ -1,0 +1,23 @@
+var 
+ch: STRING;
+nbv, nbw ,i:
+
+Begin 
+nbw := 1
+nbw := 0
+i:= 1
+whrite ("donner une chaine")
+Read (ch)
+
+while (ch[i])<> ".") DO 
+if (ch[i] in ["a", "e", "i", "o","u", "y"]) then 
+nbv := nbv +1
+end_if
+if(ch[i] =" ") then
+nbw := nbw+1
+end_if
+i:= i+1
+end_while
+writer ("nombre de word" , nbW)
+writer ("nombre de voyels" , nbv)
+writer ("longeur" , i+1)
